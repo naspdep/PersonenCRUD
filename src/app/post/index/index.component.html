@@ -3,12 +3,14 @@
   <table>
     <thead>
     <tr>
-      <th>Name</th>
+      <th>Vorname</th>
+      <th>Nachname</th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let person of people">
       <td>{{ person.name }}</td>
+      <td>{{ person.lastName }}</td>
       <td>
         <a href="#" [routerLink]="['/post/', person.id, 'view']">Anzeigen</a>
         <a href="#" [routerLink]="['/post/', person.id, 'edit']">Bearbeiten</a>
