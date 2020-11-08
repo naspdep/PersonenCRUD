@@ -1,25 +1,25 @@
-<div class="wrapper">
+<div class="wrapper" id="view-wrapper">
   <a href="#" routerLink="/post/index" class="btn btn-primary">Back</a>
 
-  <div>
-    <strong>ID:</strong>
-    <p>{{ this.person.id }}</p>
-  </div>
+  <fieldset>
+    <legend>ID</legend>
+    <div>{{ this.person.id }}</div>
+  </fieldset>
 
-  <div>
-    <strong>Vorname:</strong>
-    <p>{{ person.name }}</p>
-  </div>
+  <fieldset>
+    <legend>Vorname</legend>
+    <div>{{ person.name }}</div>
+  </fieldset>
 
 
-  <div>
-    <strong>Nachname:</strong>
-    <p>{{ person.lastName }}</p>
-  </div>
+  <fieldset>
+    <legend>Nachname</legend>
+    <div>{{ person.lastName }}</div>
+  </fieldset>
 
-  <div>
-    <strong>E-Mail:</strong>
-    <p>{{ person.email }}</p>
-  </div>
+  <fieldset>
+    <legend>E-Mail</legend>
+    <div>{{ person.email }}</div>
+  </fieldset>
 
 </div>

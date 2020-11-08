@@ -1,5 +1,8 @@
-<div class="wrapper">
-  <h1>People</h1>
+<div class="wrapper" id="index-wrapper">
+  <h1>Personen</h1>
+
+  <input type="search" placeholder="Person suchen" >
+
   <table>
     <thead>
     <tr>
@@ -12,11 +15,18 @@
       <td>{{ person.name }}</td>
       <td>{{ person.lastName }}</td>
       <td>
-        <a href="#" [routerLink]="['/post/', person.id, 'view']">Anzeigen</a>
-        <a href="#" [routerLink]="['/post/', person.id, 'edit']">Bearbeiten</a>
-        <button type="button" (click)="deletePerson(person.id)">Loeschen</button>
+        <a href="#" [routerLink]="['/post/', person.id, 'view']" class="btn btn-view">Anzeigen</a>
+      </td>
+      <td>
+        <a href="#" [routerLink]="['/post/', person.id, 'edit']" class="btn btn-edit">Bearbeiten</a>
+      </td>
+      <td>
+        <button type="button" (click)="deletePerson(person.id)" class="btn btn-delete">Löschen</button>
       </td>
     </tr>
     </tbody>
   </table>
+
+  <a href="#" class="btn btn-create" [routerLink]="'/post/create'">Neue Person</a>
+
 </div>

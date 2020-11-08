@@ -1,6 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
 
+/*
+<link rel="stylesheet" type="text/css" href="/typo3temp/compressor/merged-07293356475d263d764dc4b94a6e8d45-23f5ef51d23679afd50751d746493c29.css.gzip?1574258877" media="all">
+<link rel="stylesheet" type="text/css" href="/typo3temp/compressor/jquery.fancybox.min-64cba35e8ca3149ffbd0e138740425b7.css.gzip?1574258877" media="screen">
+<link rel="stylesheet" type="text/css" href="/typo3temp/compressor/main-c0f045d1974c8f1b14b521fa5d540a4b.css.gzip?1602241833" media="screen">
+<link rel="stylesheet" type="text/css" href="/typo3temp/compressor/print-6d8b2d514ad4bf66074430f53adf94f6.css.gzip?1574258877" media="print">
+<link rel="stylesheet" type="text/css" href="/typo3temp/compressor/zusatz_rhenus-bf3925cb8ab47c45a01c9e7b18e38fec.css.gzip?1574258878" media="screen">
+
+ */
+@import url("https://www.rhenus.com/typo3temp/compressor/merged-07293356475d263d764dc4b94a6e8d45-23f5ef51d23679afd50751d746493c29.css.gzip?1574258877");
+@import url("https://www.rhenus.com/typo3temp/compressor/jquery.fancybox.min-64cba35e8ca3149ffbd0e138740425b7.css.gzip?1574258877");
+@import url("https://www.rhenus.com/typo3temp/compressor/main-c0f045d1974c8f1b14b521fa5d540a4b.css.gzip?1602241833");
+@import url("https://www.rhenus.com/typo3temp/compressor/print-6d8b2d514ad4bf66074430f53adf94f6.css.gzip?1574258877");
+@import url("https://www.rhenus.com/typo3temp/compressor/zusatz_rhenus-bf3925cb8ab47c45a01c9e7b18e38fec.css.gzip?1574258878");
+
+*{
+  width: max-content;
+}
+
 .wrapper {
   margin: 5px;
   padding: 5px;
+  display: flex;
+  flex-flow: column;
+}
+
+fieldset{
+  border: 1px solid darkgray;
+  padding: 0 12px 0 12px;
+  width: 100%;
+}
+
+legend{
+  font-weight: bold;
+}
+
+table tr:nth-child(even){
+  background: #ccc;
+}
+
+table tr:nth-child(odd){
+  background: #fff;
+}
+
+table td, th{
+  padding-right: 5px;
+}
+
+.btn{
+  background: #ccc;
+  border: 2px outset #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.btn:hover{
+  border-style: inset;
+  cursor: pointer;
+}
+.btn-delete{
+
+}
+.btn-edit{
+
+}
+.btn-view{
+
 }
