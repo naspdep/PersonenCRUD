@@ -15,4 +15,10 @@
   "name": "test3",
   "lastName": "test3L",
   "email": "test3@test.com"
+},
+{
+  "id": 3,
+  "name": "Linda",
+  "lastName": "Dazzel",
+  "email": "ldazzel@test.com"
 }]

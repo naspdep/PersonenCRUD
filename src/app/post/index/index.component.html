@@ -1,7 +1,7 @@
 <div class="wrapper" id="index-wrapper">
   <h1>Personen</h1>
 
-  <input type="search" placeholder="Person suchen" >
+  <div class="search"><i class="fa fa-search"></i><input type="search" placeholder="Person suchen" [(ngModel)]="searchTerm"></div>
 
   <table>
     <thead>
@@ -11,7 +11,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let person of people">
+    <tr *ngFor="let person of people | filter: searchTerm">
       <td>{{ person.name }}</td>
       <td>{{ person.lastName }}</td>
       <td>

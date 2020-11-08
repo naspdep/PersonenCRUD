@@ -13,6 +13,8 @@
 @import url("https://www.rhenus.com/typo3temp/compressor/main-c0f045d1974c8f1b14b521fa5d540a4b.css.gzip?1602241833");
 @import url("https://www.rhenus.com/typo3temp/compressor/print-6d8b2d514ad4bf66074430f53adf94f6.css.gzip?1574258877");
 @import url("https://www.rhenus.com/typo3temp/compressor/zusatz_rhenus-bf3925cb8ab47c45a01c9e7b18e38fec.css.gzip?1574258878");
+/*@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs");*/
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 *{
   width: max-content;
@@ -25,8 +27,14 @@
   flex-flow: column;
 }
 
+.fa.fa-search{
+  max-height: 100%;
+  margin-right: 5px;
+}
+
 fieldset{
   border: 1px solid darkgray;
+  border-radius: 5px;
   padding: 0 12px 0 12px;
   width: 100%;
 }

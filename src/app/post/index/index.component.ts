@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonService } from '../person.service';
 import { Person } from '../person';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-index',
@@ -10,6 +11,7 @@ import { Person } from '../person';
 export class IndexComponent implements OnInit {
 
   people: Person[] = [];
+  searchTerm: string;
 
   constructor(public personService: PersonService) { }
 
